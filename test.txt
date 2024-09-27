@@ -1,0 +1,9 @@
+SELECT 
+    OrderID, 
+    SUM(Quantity) AS Soma
+FROM 
+    OrderDetails
+GROUP BY 
+    OrderID
+ORDER BY 
+    Soma DESC;
